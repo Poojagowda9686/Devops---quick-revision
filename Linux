@@ -87,11 +87,65 @@ Extract specific fields with logic
 
 4)  Difference between Scp and Rsync  ?
 
+scp = Secure Copy Protocol
 scp >>>it is used to copy files or directories from one to another server. If copy failed due to network 
 issues when network is back coyp will start from beginnnig.
+It uses SSH to copy files between local and remote systems.
+Simple and secure.
+Always copies the full file, even if nothing changed.
 
- rsync>>>> it is used to copy file or directories within the server and also between the server. If copy fails 
-due to network issues once network is back it will resume the copying where it has stopped 
+ rsync = Remote Synchronization
+rsync>>>> it is used to copy file or directories within the server and also between the server. If copy fails 
+due to network issues once network is back it will resume the copying where it has stopped .
+Used to sync files and directories between systems.
+Also uses SSH, but can work locally too.
+It copies only differences, saving bandwidth and time.
+Can resume interrupted transfers.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+5) Difference between Softlink and Hardlink?
+
+Softlink::
+Like a shortcut in Windows.
+Points to the original file’s path, not the data.
+If the original file is deleted or moved, the soft link breaks.
+
+Hardlink::
+it is a shortcut of a file. If we make any changes in original file then it will reflect in 
+hardlink. In case if we delete the original file then hardlink will work because it points inode of a file.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+6) Listout network managing commands?
+
+ping ipaddress or hostname >>> to check weather service packets working.
+ netstat –na | grep “8080” >>>> this is to check weather that port is working or not. 
+. ps [process] it is used to list current running process of a system. 
+ps -ef  it gives the list of system running processes. 
+ps -ef|grep -i “java” it gives the output of particular process “java” weather it is running in the system 
+or not. 
+ps -ef|grep “process1” -e “process2” it is used to search weather process 1 and process 2 are running. 
+Kill -9<PID>  it is used to kill the process ids which is running in the system. 
+ps -u “username” it will show all the process starts by user.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+7) How to check CPU Utilization for processors and how to reduce the cpu usage if particular process using more cpu.
+
+Using top command we can see the cpu usgae
+To reduce the CPU usage we can set the CPU limit for processor
+or we can delete the process if not being important using ps command.
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+8) journalctl – View System Logs (Systemd)
+  journalctl -xe
+  journalctl -u nginx
+
+
+
 
 
 
