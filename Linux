@@ -1,0 +1,97 @@
+1) What is Devops?
+Devops is a combination of development and operations.its a cultural practice where which increases the organization ability to deliver the application at high velocity. Improving software development at faster pace 
+Devops is all about how frequest we release the new software feautures to customers.
+🚀 Benefits of DevOps
+🔁 Faster software delivery
+🤝 Better collaboration
+🐞 Fewer bugs in production
+📉 Reduced downtime
+📈 Higher scalability and availability
+🧪 Automated testing & deployments
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2) List out most commonly used commands in Devops?
+⦁	ls    -  list files and directory
+⦁	ls -l  >> long listing files
+⦁	touch- create a new file
+⦁	vi- editor command
+⦁	cp - copying file/folder from src to dest
+⦁	rm - removing files
+⦁	mkdir - create new directory
+⦁	rmdir - removing the directory
+⦁	pwd - present working directory
+⦁	cd - change directory
+⦁	chmod - change the file permissions
+⦁	chown- change the ownership 
+⦁	ps -list out running processe
+⦁	top - checking CPU usage
+⦁	du - disk usage
+⦁	df - disk free
+⦁	netstat - tuln >>> to check open ports
+⦁	ping google.com - test the connectivity
+⦁	wget - download file from internet
+⦁	scp -  copying files from onerserver to another server while copying network goes down once it resumed it starts copying where it left.
+⦁	rsync- copying files from onerserver to another server while copying network goes down once it resumed it starts copying from starting
+⦁	cut  - 
+⦁	awk
+⦁	head - to dispaly top content of logs
+⦁	tail - to display bottom lines in a file.
+
+Top 15 Daily Used Commands in DevOps
+cd /var/www
+ls -la
+df -h
+free -m
+top
+tail -f /var/log/syslog
+chmod +x deploy.sh
+systemctl restart nginx
+docker ps
+docker logs <id>
+kubectl get pods
+kubectl logs <pod>
+git pull origin main
+scp file.txt user@host:/path/
+crontab -e
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+3) Difference between cut and awk command
+
+ Cut >>>this is used to cut a file in column wise to print on the command line prompt.
+aws >>>it is also used as a function like cut but in cut command the delimiter have single space, and 
+some may have multiple space, to overcome with this problem we can use awk
+
+
+✂️ cut Command – Use Cases & Examples
+Use: Extract specific columns or characters from a line
+
+✅ Use Cases:
+Get specific fields from logs or CSVs
+
+Extract usernames, emails, IPs, etc.
+
+When you know fixed positions or delimiter
+🧠 awk Command – Use Cases & Examples
+Use: A full mini programming language for text processing
+
+✅ Use Cases:
+Filter rows based on conditions
+
+Perform calculations on columns
+
+Format text output
+
+Extract specific fields with logic
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.
+
+4)  Difference between Scp and Rsync  ?
+
+scp >>>it is used to copy files or directories from one to another server. If copy failed due to network 
+issues when network is back coyp will start from beginnnig.
+
+ rsync>>>> it is used to copy file or directories within the server and also between the server. If copy fails 
+due to network issues once network is back it will resume the copying where it has stopped 
+
+
+
